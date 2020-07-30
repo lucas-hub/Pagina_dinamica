@@ -32,11 +32,11 @@ function setBackground(){
     let today = new Date(),
     hour = today.getHours();
 
-    if(hour < 12){
+    if(hour > 6 && hour < 12){
         //manhã
         document.body.style.backgroundImage = "url('./imagens/dia.jpg')";
         greeting.textContent = 'Bom dia';
-    } else if(hour < 18){
+    } else if(hour > 12 && hour < 18){
         //tarde
         document.body.style.backgroundImage = "url('./imagens/tarde.jpg')";
         greeting.textContent = 'Boa tarde';
